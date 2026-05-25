@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo verde floresta profundo para o site ter vida */
+body {
+    background-color: #0d261e; 
+    color: #ffffff;
+}
+
+.secao-camadas {
+    padding: 100px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* Tudo centralizado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.titulo span {
+    color: #ffca28; /* Amarelo Sol de destaque */
+}
+
+.linha-decorativa {
+    width: 80px;
+    height: 5px;
+    background-color: #ffca28;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #a3c2b8;
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+/* Organização das Caixas Separadas */
+.grade-camadas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.card-camada {
+    background-color: #163d30; /* Fundo verde escuro contrastante */
+    padding: 40px 25px;
+    border-radius: 20px;
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação fluida */
+}
+
+.icone {
+    font-size: 2.5rem;
+    color: #ffca28;
+    margin-bottom: 20px;
+}
+
+.card-camada h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.descricao {
+    font-size: 1rem;
+    color: #cbdad5;
+    line-height: 1.6;
+}
+
+/* Card do meio começa ligeiramente maior */
+.destaque {
+    background-color: #1a4a3a;
+    border: 2px solid #2e7d32;
+    transform: scale(1.03);
+}
+
+/* Efeitos Interativos ao passar o mouse */
+.card-camada:hover {
+    transform: translateY(-15px) scale(1.05); /* Sobe e cresce levemente */
+    background-color: #2e7d32; /* Muda para verde folha vivo */
+    border-color: #ffca28;
+    box-shadow: 0 15px 35px rgba(46, 125, 50, 0.4);
+}
+/* --- CONFIGURAÇÕES GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo Verde-Floresta Escuro e Elegante */
+body {
+    background-color: #0d261e;
+    color: #ffffff;
+}
+
+.secao-quiz {
+    padding: 100px 0;
+    width: 100%;
+}
+
+/* Container de Alinhamento e Margens */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center; /* Centralização obrigatória de todos os textos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TÍTULO EM DESTAQUE SOLICITADO */
+.titulo-amarelo {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #ffca28; /* Cor Amarela Forte (Amarelo-Sol) */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.linha-decorativa {
+    width: 120px;
+    height: 6px;
+    background-color: #ffca28;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #cbdad5;
+    max-width: 750px;
+    margin-bottom: 60px;
+    line-height: 1.7;
+}
+
+/* --- BLOCOS DE PERGUNTAS SEPARADOS --- */
+.bloco-perguntas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Margem generosa separando cada bloco de pergunta */
+}
+
+.card-pergunta {
+    background-color: #163d30; /* Fundo verde intermediário contrastante */
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    text-align: left; /* Texto interno alinhado à esquerda para facilitar a leitura */
+    transition: transform 0.3s ease;
+}
+
+.card-pergunta:hover {
+    transform: scale(1.01); /* Leve crescimento interativo no bloco todo */
+}
+
+/* Indicador visual com número da questão */
+.numero-pergunta {
+    background-color: #ffca28;
+    color: #0d261e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.card-pergunta h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* --- BOTÕES DE OPÇÃO (INTERATIVOS) --- */
+.grupo-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcao {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 18px 25px;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efeito Hover: Fica Amarelo ao passar o mouse antes de responder */
+.opcao:hover:not([disabled]) {
+    background-color: #ffca28;
+    color: #0d261e;
+    border-color: #ffca28;
+    transform: translateX(8px); /* Move levemente para a direita, dando sensação de vida */
+}
+
+/* ESTILOS DE RESPOSTA ATIVADOS PELO JAVASCRIPT */
+.opcao.correta {
+    background-color: #2e7d32 !important; /* Verde Folha Vivo */
+    color: #ffffff !important;
+    border-color: #4caf50 !important;
+    font-weight: 700;
+    box-shadow: 0 0 15px rgba(46, 125, 50, 0.6);
+}
+
+.opcao.errada {
+    background-color: #c62828 !important; /* Vermelho Alerta */
+    color: #ffffff !important;
+    border-color: #ef5350 !important;
+    font-weight: 700;
+    box-shadow: 0 0 15px rgba(198, 40, 40, 0.6);
+}
+
+/* --- CAIXA DE FEEDBACK TEXTUAL --- */
+.feedback {
+    margin-top: 25px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    display: none; /* Escondido por padrão */
+    animation: abrirFeedback 0.4s ease forwards;
+}
+
+.feedback.mostrar {
+    display: block;
+}
+
+.feedback.sucesso {
+    background-color: rgba(46, 125, 50, 0.15);
+    border: 1px solid #4caf50;
+    color: #81c784;
+}
+
+.feedback.erro {
+    background-color: rgba(198, 40, 40, 0.15);
+    border: 1px solid #ef5350;
+    color: #e57373;
+}
+
+.badge-interacao {
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    color: #ffca28;
+    border: 1px dashed #ffca28;
+}
+
+/* Animação suave para revelar a resposta */
+@keyframes abrirFeedback {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- RESPONSIVIDADE PARA CELULAR --- */
+@media screen and (max-width: 600px) {
+    .titulo-amarelo {
+        font-size: 2.2rem;
+    }
+    
+    .card-pergunta {
+        padding: 25px 20px;
+    }
+
+    .opcao {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+}

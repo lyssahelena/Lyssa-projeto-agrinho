@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Camadas - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="secao-camadas">
+        <div class="container">
+            <h2 class="titulo">Equilíbrio na <span>Agrofloresta</span></h2>
+            <div class="linha-decorativa"></div>
+            <p class="subtitulo">Passe o mouse sobre as camadas para entender como a produção e o meio ambiente convivem em perfeita harmonia.</p>
+
+            <div class="grade-camadas">
+                <div class="card-camada">
+                    <div class="icone"><i class="fa-solid fa-cloud-sun"></i></div>
+                    <h3>1. Estrato Alto (Copas)</h3>
+                    <p class="descricao">Árvores grandes como a Castanheira e o Mogno. Elas capturam muita luz solar e protegem o chão contra temporais fortes.</p>
+                </div>
+
+                <div class="card-camada destaque">
+                    <div class="icone"><i class="fa-solid fa-tree"></i></div>
+                    <h3>2. Estrato Médio</h3>
+                    <p class="descricao">Árvores frutíferas como a Bananeira e a laranjeira. Convivem muito bem na meia-sombra gerada pelas árvores mais altas.</p>
+                </div>
+
+                <div class="card-camada">
+                    <div class="icone"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>3. Estrato Baixo / Solo</h3>
+                    <p class="descricao">Café, hortaliças e abóboras. Ficam bem perto do solo úmido e rico em folhas secas, produzindo alimento rápido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Mecânica da Sustentabilidade - Agrinho 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="secao-quiz">
+        <div class="container">
+            
+            <h1 class="titulo-amarelo">A Mecânica da Sustentabilidade</h1>
+            <div class="linha-decorativa"></div>
+            
+            <p class="subtitulo">Teste seus conhecimentos! Clique na resposta que você acha correta e descubra se você já domina o funcionamento das Agroflorestas.</p>
+
+            <div class="bloco-perguntas">
+
+                <div class="card-pergunta">
+                    <div class="numero-pergunta">1</div>
+                    <h3>Qual é o principal diferencial da Agrofloresta em relação à agricultura tradicional?</h3>
+                    
+                    <div class="grupo-opcoes">
+                        <button class="opcao" onclick="verificarResposta(this, false)">A) Plantar apenas um tipo de cultura usando adubos químicos em toda a área.</button>
+                        <button class="opcao" onclick="verificarResposta(this, true)">B) Plantar alimentos misturados com árvores nativas, imitando a própria natureza.</button>
+                        <button class="opcao" onclick="verificarResposta(this, false)">C) Deixar a terra descansando sem plantar nada por vários anos seguidos.</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card-pergunta">
+                    <div class="numero-pergunta">2</div>
+                    <h3>Como as Agroflorestas ajudam a proteger o solo sem usar venenos?</h3>
+                    
+                    <div class="grupo-opcoes">
+                        <button class="opcao" onclick="verificarResposta(this, false)">A) Cobrindo todo o chão da plantação com plásticos pretos protetores.</button>
+                        <button class="opcao" onclick="verificarResposta(this, false)">B) Removendo todas as folhas secas que caem para deixar a terra limpa.</button>
+                        <button class="opcao" onclick="verificarResposta(this, true)">C) Usando folhas e galhos como adubo natural e atraindo insetos bons que combatem as pragas.</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card-pergunta">
+                    <div class="numero-pergunta">3</div>
+                    <h3>O que o pilar do "Protagonismo Jovem" no Agrinho 2026 incentiva?</h3>
+                    
+                    <div class="grupo-opcoes">
+                        <button class="opcao" onclick="verificarResposta(this, true)">A) Que os estudantes usem a tecnologia e a programação para resolver problemas reais do campo.</button>
+                        <button class="opcao" onclick="verificarResposta(this, false)">B) Que os jovens apenas assistam a palestras sem criar projetos práticos.</button>
+                        <button class="opcao" onclick="verificarResposta(this, false)">C) Que as escolas parem de usar computadores e foquem apenas em ferramentas antigas.</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+            </div> <div class="badge-interacao">
+                <i class="fa-solid fa-lightbulb"></i> Interatividade criada com HTML, CSS e JavaScript.
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function verificarResposta(botaoClicado, eCorreta) {
+            // Encontra o card da pergunta onde o botão foi clicado
+            const card = botaoClicado.closest('.card-pergunta');
+            // Encontra todas as opções daquela pergunta específica
+            const botoes = card.querySelectorAll('.opcao');
+            // Encontra a caixinha de feedback daquela pergunta
+            const feedback = card.querySelector('.feedback');
+
+            // Desabilita todos os botões daquela pergunta para a pessoa não clicar duas vezes
+            botoes.forEach(btn => {
+                btn.disabled = true;
+                btn.style.cursor = "not-allowed";
+            });
+
+            // Se acertou, deixa o botão verde e mostra mensagem de sucesso
+            if (eCorreta) {
+                botaoClicado.classList.add('correta');
+                feedback.innerHTML = "<i class='fa-solid fa-circle-check'></i> <strong>Resposta Correta!</strong> Excelente, você compreendeu o equilíbrio sustentável.";
+                feedback.classList.add('mostrar', 'sucesso');
+            } else {
+                // Se errou, deixa o botão vermelho e mostra mensagem de erro
+                botaoClicado.classList.add('errada');
+                feedback.innerHTML = "<i class='fa-solid fa-circle-xmark'></i> <strong>Resposta Errada.</strong> Tente analisar como a biodiversidade trabalha nas agroflorestas!";
+                feedback.classList.add('mostrar', 'erro');
+                
+                // Destaca em verde qual era a alternativa certa para ajudar o estudante a aprender
+                botoes.forEach(btn => {
+                    if (btn.getAttribute('onclick').includes('true')) {
+                        btn.classList.add('correta');
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
